@@ -4,7 +4,10 @@ import { Typography, Row, Col, Statistic } from 'antd'
 import { Link } from 'react-router-dom'
 import { useGetCryptosQuery } from '../services/cryptoApi'
 import { Cryptocurrencies, News } from '../components'
+<<<<<<< HEAD
 import Loader from './Loader';
+=======
+>>>>>>> 58e9962859d999d152a5b0273faae9fb9d0a0681
 
 // destructure title
 const { Title } = Typography
@@ -14,7 +17,11 @@ const Homepage = () => {
   const { data, isFetching } = useGetCryptosQuery(10);
   const globalStats = data?.data?.stats;
 
+<<<<<<< HEAD
   if (isFetching) return <Loader />;
+=======
+  if (isFetching) return "Loading...";
+>>>>>>> 58e9962859d999d152a5b0273faae9fb9d0a0681
 
   return (
     <>
